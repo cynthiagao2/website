@@ -1,13 +1,62 @@
-# image of self
-# name, location, about me (background and hobbies)
+<!DOCTYPE html>
 
-# up right socials: twitter, email, linkedin.
+<html>
+    <head>
+        <link rel="stylesheet" href="./sitewide.css">
+        <script src="./home.js"></script>
+        <title>Cynthia Gao</title>
+    </head>
 
-# professional experience (overview) 
-# list individual projects
 
-# nav
-## about
-## contact (email form)
-## home/projects
-## socials
+    <body>
+        <div id="title">
+            <h1>cynthia gao</h1>
+            <!-- linkedin, x, twitch, akasha -->
+        </div>
+
+
+        <div id="nav-bar">
+            <a class="nav-active nav" href="./index.html">Home</a>
+            <div class="dropdown">
+                <a class="p-nav nav" href="./portfolio.html">Portfolio</a> 
+                <div class="drop-content">
+                    <a href="./project_pages/webdesign.html">Web Design</a>
+                    <a href="./project_pages/ucsdrecreation.html">UCSD Recreation</a>
+                    <a href="./project_pages/corelogic.html">CoreLogic, Inc.</a>
+                    <a href="./project_pages/blacksesame.html">Black Sesame Technologies</a>
+                    <a href="./project_pages/tritongaming.html">Triton Gaming</a>
+                    <a href="./project_pages/ucsdesports.html">UCSD Esports</a>
+                </div>
+            </div>
+            <a class="nav" href="./website.html">About the Website</a>
+            <a class="nav" href="./contact.html">Contact Me</a>
+        </div>
+        
+        
+        <div id="about-me">
+            <h2>Hi! My name is Cynthia</h2>
+            <p>and I aspire to work in <strong>Product Management</strong> or <strong>Front-End Development</strong>. I graduated in 2024 from UC San Diego with 
+                a Bachelors' Degree in Computer Science, picking up minors in Business and in Philosophy along the way. During university, 
+                I studied <strong>software engineering</strong> (including algorithms, data structures, the Agile workflow, cybersecurity 
+                and cryptography, user design, and processor optimization), <strong>product marketing and management</strong>, and 
+                the <strong>ethical debates happening within technology, business leadership, and the environment</strong>.</p>
+            <p>In the same way that this website is self-taught and self-made, I'm slowly practicing digital art and model rigging so that
+                I can one day debut as a VTuber on Twitch. In my time off, I take pride in being a great mom to my cat (Nico), singing in 
+                the shower, and helping both friends and internet strangers with their Genshin Impact builds!</p>
+            <p>I'm looking forward to working together ♡</p>
+            
+            <!-- TODO: photo of myself and nico + alt-text + caption -->
+
+        </div>
+        
+        
+        <div id="p-grid">
+            <div class="p-grid-item">Web Design</div>
+            <div class="p-grid-item">UCSD Recreation</div>
+            <div class="p-grid-item">CoreLogic</div>
+            <div class="p-grid-item">Black Sesame Technologies</div>
+            <div class="p-grid-item">Triton Gaming</div>
+            <div class="p-grid-item">UCSD Esports</div>
+        </div>
+    </body>
+</html>
