@@ -1,0 +1,3 @@
+## Welcome to my website!
+
+My name is Cynthia Gao and I'm a new grad pursuing a career in Product and/or Front-End Programming. I graduated from UC San Diego in 2024 with a Bachelors' degree in Computer Science, but initially I had no interest in a SWE career. I was inspired by friends and job appolications to make my own website, but I didn't want to use Google Site, SquareSpace, etc. templates, so I'm embarking on a journey to build my own! With two intro HTML courses under my belt, how hard can it be?
