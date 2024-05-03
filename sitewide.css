@@ -1,0 +1,36 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#about-me {
+    padding: 2% 12% 2% 12%;
+    background-image: linear-gradient(#fcdbba, #ff99c2);
+
+}
+
+#img-glue {
+    display: inline-block;
+    position: relative;
+}
+
+#abt-text {
+    width: 70%;
+    float: left;
+}
+
+#abt-img {
+    border-radius: 20%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 25%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+h2 {
+    font-size: 40px;
+}
