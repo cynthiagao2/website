@@ -9,27 +9,32 @@
 
 
     <body>
-        <div id="title">
-            <h1>cynthia gao</h1>
-            <!-- linkedin, x, twitch, akasha -->
-        </div>
-
-
-        <div id="nav-bar">
-            <a class="nav-active nav" href="./index.html">Home</a>
-            <div class="dropdown">
-                <a class="p-nav nav" href="./portfolio.html">Portfolio</a> 
-                <div class="drop-content">
-                    <a href="./project_pages/webdesign.html">Web Design</a>
-                    <a href="./project_pages/ucsdrecreation.html">UCSD Recreation</a>
-                    <a href="./project_pages/corelogic.html">CoreLogic, Inc.</a>
-                    <a href="./project_pages/blacksesame.html">Black Sesame Technologies</a>
-                    <a href="./project_pages/tritongaming.html">Triton Gaming</a>
-                    <a href="./project_pages/ucsdesports.html">UCSD Esports</a>
-                </div>
+        <div id="sticky-div">
+            <div id="title">
+                <h1>cynthia gao</h1>
+                <!-- linkedin, x, twitch, akasha -->
             </div>
-            <a class="nav" href="./website.html">About the Website</a>
-            <a class="nav" href="./contact.html">Contact Me</a>
+    
+    
+            <div id="nav-bar">
+                <a class="nav-active" href="./index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="location.href='./portfolio.html'" type="button">Portfolio</button>
+                    <div class="drop-content">
+                        <a href="./project_pages/webdesign.html">Web Design</a>
+                        <a href="./project_pages/ucsdrecreation.html">UCSD Recreation</a>
+                        <a href="./project_pages/corelogic.html">CoreLogic, Inc.</a>
+                        <a href="./project_pages/blacksesame.html">Black Sesame, Inc.</a>
+                        <a href="./project_pages/tritongaming.html">Triton Gaming</a>
+                        <a href="./project_pages/ucsdesports.html">UCSD Esports</a>
+                    </div>
+                </div>
+                <a class="nav" href="./website.html">About this Website</a>
+                <a class="nav" href="./contact.html">Contact Me</a>
+    
+                <!-- TODO: Portfolio button must be clickable -->
+                <!-- all nav-bar buttons should change color on hover -->
+            </div>
         </div>
         
     
@@ -39,7 +44,7 @@
                 <img id="abt-img" src="./imgs/cyn_nico.jpg" alt="Cynthia smiling with a black cat in her arms">
 
                 <div id="abt-text">
-                    <h2>Hi, nice to meet you!</h2>
+                    <h2>hi, nice to meet you!</h2>
 
                     <p>I'm an early career professional aspiring to work in <strong>Product Management</strong> or <strong>Front-End Development</strong>.
                     I graduated in 2024 from UC San Diego with a Bachelors' Degree in Computer Science, picking up a Business minor and a Philosophy minor 

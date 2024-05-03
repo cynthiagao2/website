@@ -1,6 +1,117 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+}
+
+#sticky-div {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#title {
+    background-image: linear-gradient(#ff99c2, #292533);
+    height: 120px;
+    padding: 0 12%;
+}
+
+h1 {
+    letter-spacing: 0.5em;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+}
+
+#nav-bar {
+    background-color: #292533;
+    overflow: hidden;
+    padding-left: 12%;
+    display: flex;
+}
+
+#nav-bar a {
+    float: left;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 8px 40px;
+    text-decoration: none;
+}
+#nav-bar a:hover {
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+}
+
+.nav-active {
+    background-color: #4b4b91;
+}
+.nav-active:hover {
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown:hover {
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+}
+
+.dropbtn {
+    font-size: 18px;
+    border:none;
+    outline: none;
+    color: white;
+    padding: 8px 40px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+.dropbtn:hover {
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+}
+
+.drop-content {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    background-color: #292533;
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+    flex-direction: column;
+    padding: 0;
+    min-width: 200px;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.drop-content a {
+    float: none;
+    color: white !important;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-content a:hover {
+    background-color: #4b4b91;
+}
+
+.dropdown:hover .drop-content {
+    display: flex;
+    opacity: 1;
 }
 
 #about-me {
@@ -17,6 +128,7 @@ body {
 #abt-text {
     width: 70%;
     float: left;
+    margin-bottom: 30px;
 }
 
 #abt-img {
@@ -33,4 +145,10 @@ body {
 
 h2 {
     font-size: 40px;
+    margin: 50px 0px 30px 0px;
+}
+
+p {
+    line-height: 160%;
+    margin-bottom: 16px;
 }
