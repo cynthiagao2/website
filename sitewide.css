@@ -191,3 +191,49 @@ p {
     margin: 0;
     cursor: context-menu;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid white;
+    background: #ff99c2;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4b4b91;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+    background-color: white;
+    display: block;
+    border-style: solid;
+    height: 8px;
+    width: 10px;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #ff99c2 transparent;
+}
+  
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #4b4b91 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #ff99c2 transparent transparent transparent;
+}
+  
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #4b4b91 transparent transparent transparent;
+}
