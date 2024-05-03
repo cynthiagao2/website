@@ -21,14 +21,14 @@ body {
 
 #title {
     background-image: linear-gradient(#ff99c2, #292533);
-    height: 120px;
+    height: fit-content;
     padding: 0 12%;
 }
 
 h1 {
     letter-spacing: 0.5em;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px;
     font-size: 60px;
     font-weight: normal;
     color: white;
@@ -50,14 +50,14 @@ h1 {
     text-decoration: none;
 }
 #nav-bar a:hover {
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+    background-color: #4b4b91;
 }
 
 .nav-active {
-    background-color: #4b4b91;
+    background-color: #ff99c2;
 }
 .nav-active:hover {
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+    background-color: #4b4b91;
 }
 
 .dropdown {
@@ -65,7 +65,7 @@ h1 {
     overflow: hidden;
 }
 .dropdown:hover {
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+    background-color: #4b4b91;
 }
 
 .dropbtn {
@@ -80,15 +80,14 @@ h1 {
     cursor: pointer;
 }
 .dropbtn:hover {
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
+    background-color: #4b4b91;
 }
 
 .drop-content {
-    display: flex;
+    display: none;
     opacity: 0;
     position: absolute;
     background-color: #292533;
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
     flex-direction: column;
     padding: 0;
     min-width: 200px;
@@ -107,6 +106,7 @@ h1 {
 
 .drop-content a:hover {
     background-color: #4b4b91;
+    box-shadow: 0px 0px 0px 4px #fcdbba inset;
 }
 
 .dropdown:hover .drop-content {
@@ -115,9 +115,8 @@ h1 {
 }
 
 #about-me {
-    padding: 2% 12% 2% 12%;
+    padding: 2% 12% 0 12%;
     background-image: linear-gradient(#fcdbba, #ffbfcf);
-
 }
 
 #img-glue {
@@ -128,7 +127,6 @@ h1 {
 #abt-text {
     width: 70%;
     float: left;
-    margin-bottom: 30px;
 }
 
 #abt-img {
