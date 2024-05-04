@@ -111,9 +111,10 @@ p {
 
 #cover {
     background-image: radial-gradient(closest-side, #fcdbba, #ffbfcf);
-    height: 100vh;
+    height: 110vh;
     position: relative;
     text-align: center;
+    margin-top: -50px;
 }
 
 h1 {
@@ -143,9 +144,9 @@ h1 {
 }
 #cover-btn {
     position: absolute;
-    top: 65%;
-    left: 45%;
-    right: 45%;
+    top: 62%;
+    left: 0%;
+    right: 0%;
 }
 
 .def-btn {
@@ -214,12 +215,12 @@ h1 {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: 2px solid white;
-    background: #ff99c2;
+    background: #ffbfcf;
 }
   
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #4b4b91;
+    background: #ff99c2;
 }
 
 /* Buttons */
@@ -233,18 +234,18 @@ h1 {
 /* Up */
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
     border-width: 0 8px 8px 8px;
-    border-color: transparent transparent #ff99c2 transparent;
+    border-color: transparent transparent #ffbfcf transparent;
 }
   
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-    border-color: transparent transparent #4b4b91 transparent;
+    border-color: transparent transparent #ff99c2 transparent;
 }
 /* Down */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
     border-width: 8px 8px 0 8px;
-    border-color: #ff99c2 transparent transparent transparent;
+    border-color: #ffbfcf transparent transparent transparent;
 }
   
 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-    border-color: #4b4b91 transparent transparent transparent;
+    border-color: #ff99c2 transparent transparent transparent;
 }
