@@ -11,111 +11,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    background-image: url("./imgs/backdrop.avif");
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+    background-repeat: repeat;
+    overflow-y: auto;
 }
 
-#sticky-div {
+#sticky-top {
     position: sticky;
     top: 0;
     z-index: 999;
 }
 
-#title {
-    background-image: linear-gradient(#ff99c2, #292533);
-    height: fit-content;
-    padding: 0 12%;
-}
-
-h1 {
-    letter-spacing: 0.5em;
-    text-align: center;
-    padding: 15px;
-    font-size: 60px;
-    font-weight: normal;
-    color: white;
-}
-
 #nav-bar {
-    background-color: #292533;
     overflow: hidden;
     padding-left: 12%;
-    display: flex;
 }
 
 #nav-bar a {
     float: left;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
+    padding: 8px 0;
+    margin-right: 80px;
     color: white;
-    text-align: center;
-    padding: 8px 40px;
     text-decoration: none;
 }
 #nav-bar a:hover {
-    background-color: #4b4b91;
+    text-decoration: underline white;
 }
 
 .nav-active {
-    background-color: #ff99c2;
+    color: black !important;
 }
 .nav-active:hover {
-    background-color: #4b4b91;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropdown:hover {
-    background-color: #4b4b91;
-}
-
-.dropbtn {
-    font-size: 18px;
-    border:none;
-    outline: none;
-    color: white;
-    padding: 8px 40px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
-}
-.dropbtn:hover {
-    background-color: #4b4b91;
-}
-
-.drop-content {
-    display: none;
-    opacity: 0;
-    position: absolute;
-    background-color: #292533;
-    flex-direction: column;
-    padding: 0;
-    min-width: 200px;
-    z-index: 1;
-    transition: all .5s ease;
-}
-
-.drop-content a {
-    float: none;
-    color: white !important;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.drop-content a:hover {
-    background-color: #4b4b91;
-    box-shadow: 0px 0px 0px 4px #fcdbba inset;
-}
-
-.dropdown:hover .drop-content {
-    display: flex;
-    opacity: 1;
+    text-decoration: underline black !important;
 }
 
 #about-me {
-    padding: 2% 12% 0 12%;
     background-image: linear-gradient(#fcdbba, #ffbfcf);
 }
 
@@ -126,6 +60,7 @@ h1 {
 
 #abt-text {
     width: 70%;
+    padding: 9% 12% 15% 12%;
     float: left;
 }
 
@@ -133,7 +68,8 @@ h1 {
     border-radius: 20%;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 12%;
+    margin-bottom: 20px;
     transform: translateY(-50%);
     max-width: 25%;
     max-height: 100%;
@@ -141,9 +77,31 @@ h1 {
     height: auto;
 }
 
+#abt-foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#abt-btn {
+    position: absolute;
+    top: 70%;
+    left: 12%;
+}
+
+#abt-btn .def-btn {
+    color: black !important;
+    border: black solid 2px;
+}
+
+#abt-btn .def-btn:hover {
+    color: #ffbfcf !important;
+    background-color: black;
+}
+
 h2 {
     font-size: 40px;
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 30px 0px;
 }
 
 p {
@@ -151,14 +109,68 @@ p {
     margin-bottom: 16px;
 }
 
+#cover {
+    background-image: radial-gradient(closest-side, #fcdbba, #ffbfcf);
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 0.5em;
+    text-align: center;
+    font-size: 72px;
+    font-weight: normal;
+    color: white;
+    width: fit-content;
+    position: absolute;
+    top: 40%;
+    left: 0.5em;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cover-text {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#cover-btn {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    right: 45%;
+}
+
+.def-btn {
+    border-radius: 10px;
+    border: white solid 2px;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#cover-btn .def-btn:hover {
+    color: #fcdbba;
+    background-color: white;
+}
+
 #projects {
-    padding: 0 12%;
-    background-color: #ffbfcf;
+    padding: 2% 12% 2% 12%;
+    min-height: 90vh;
 }
 
 #animatext {
     position: relative;
-    padding: 50px 12% 0 12%;
+    padding: 30px 12% 0 12%;
     background-image: linear-gradient(#ffbfcf, #fcdbba);
     -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0,0,0,.2));
 }
@@ -179,9 +191,10 @@ p {
 }
 
 #fill {
-    font-size: 60px;
+    font-size: 40px;
     background-color: #fcdbba;
     margin: 0;
+    padding: 0;
 }
 
 #fill p {
